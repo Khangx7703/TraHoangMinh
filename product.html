@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản phẩm</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./fonts/font.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="color-bar"></div>
+        <div class="nav_bar">
+            <a href="./" class="logo"><img src="./logo1.png" alt="logo"></a>
+            <div class="links">
+                <a href="./index.html">Trang chủ</a>
+                <a href="./">Sản phẩm</a>
+                <a href="./">Về chúng tôi</a>
+                <a href="./">Liên hệ</a>
+            </div>
+        </div>
+    </header>
+    <main class="product">
+        <div class="search-bar">
+            <input type="text" placeholder="Search..." class="search" name="search">
+        </div>
+        <div class="head">
+            <h2>Menu sản phẩm</h2>
+            <div class="cart">
+                <button id="cart-btn"><img src="./img/product/cart.png" alt="cart"><span id="cart-badge"
+                        class="hidden"></span></button>
+            </div>
+        </div>
+        <div class="boxes">
+            <div class="item">
+                <img src="./img/product/img1.png" alt="img1">
+                <div class="info">
+                    <p class="tea">Trà xanh Thái Nguyên:</p>
+                    <p class="flavor">Vị đắng, chát, thơm, thơm giống mùi matcha thoang thoảng.</p>
+                </div>
+                <div class="buy">
+                    <button data-target="cart-1" onclick="toggleCart(this)">Mua</button>
+                    <p class="price">480.000đ/kg</p>
+                </div>
+            </div>
+            <div class="cart hidden" id="cart-1">
+                <div class="cart-item">
+                    <button class="cart-btn">Bỏ giỏ</button>
+                    <p>240.000đ/500g</p>
+                </div>
+                <div class="cart-item">
+                    <button class="cart-btn">Bỏ giỏ</button>
+                    <p>480.000đ/kg</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./img/product/img2.png" alt="img2">
+                <div class="info">
+                    <p class="tea">Trà Ô Long:</p>
+                    <p class="flavor">Đắng nhạt, hậu vị sâm, thơm trà và mùi sâm.</p>
+                </div>
+                <div class="buy">
+                    <button data-target="cart-2" onclick="toggleCart(this)">Mua</button>
+                    <p class="price">690.000đ/kg</p>
+                </div>
+            </div>
+            <div class="cart hidden" id="cart-2">
+                <div class="cart-item">
+                    <button class="cart-btn">Bỏ giỏ</button>
+                    <p>345.000đ/500g</p>
+                </div>
+                <div class="cart-item">
+                    <button class="cart-btn">Bỏ giỏ</button>
+                    <p>690.000đ/kg</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./img/product/img3.png" alt="img3">
+                <div class="info">
+                    <p class="tea">Trà đen (ceylon, assam):</p>
+                    <p class="flavor">Đắng, vị trà đậm, thơm đậm trà.</p>
+                </div>
+                <div class="buy">
+                    <button data-target="cart-3" onclick="toggleCart(this)">Mua</button>
+                    <p class="price">580.000đ/kg</p>
+                </div>
+            </div>
+            <div class="cart hidden" id="cart-3">
+                <div class="cart-item">
+                    <button class="cart-btn">Bỏ giỏ</button>
+                    <p>290.000đ/500g</p>
+                </div>
+                <div class="cart-item">
+                    <button class="cart-btn">Bỏ giỏ</button>
+                    <p>580.000đ/kg</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./img/product/img4.png" alt="img4">
+                <div class="info">
+                    <p class="tea">Trà trắng (Bạch trà):</p>
+                    <p class="flavor">Đắng, vị trà nhạt, thơm thoảng.</p>
+                </div>
+                <div class="buy">
+                    <button data-target="cart-4" onclick="toggleCart(this)">Mua</button>
+                    <p class="price">1.100.000đ/kg</p>
+                </div>
+            </div>
+            <div class="cart hidden" id="cart-4">
+                <div class="cart-item">
+                    <button class="cart-btn">Bỏ giỏ</button>
+                    <p>550.000đ/500g</p>
+                </div>
+                <div class="cart-item">
+                    <button class="cart-btn">Bỏ giỏ</button>
+                    <p>1.100.000đ/kg</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./img/product/img5.png" alt="img5">
+                <div class="info">
+                    <p class="tea">Trà phổ nhĩ:</p>
+                    <p class="flavor">Đậm vị, đắng, hậu vị sau đắng vừa.</p>
+                </div>
+                <div class="buy">
+                    <button data-target="cart-5" onclick="toggleCart(this)">Mua</button>
+                    <p class="price">1.350.000đ/kg</p>
+                </div>
+            </div>
+            <div class="cart hidden" id="cart-5">
+                <div class="cart-item">
+                    <button class="cart-btn">Bỏ giỏ</button>
+                    <p>675.000đ/500g</p>
+                </div>
+                <div class="cart-item">
+                    <button class="cart-btn">Bỏ giỏ</button>
+                    <p>1.350.000đ/kg</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./img/product/img6.png" alt="img6">
+                <div class="info">
+                    <p class="tea">Trà Thảo mộc:</p>
+                    <p class="flavor">Thơm, hơi đắng.</p>
+                </div>
+                <div class="buy">
+                    <button data-target="cart-6" onclick="toggleCart(this)">Mua</button>
+                    <p class="price">380.000đ/kg</p>
+                </div>
+            </div>
+            <div class="cart hidden" id="cart-6">
+                <div class="cart-item">
+                    <button class="cart-btn">Bỏ giỏ</button>
+                    <p>190.000đ/500g</p>
+                </div>
+                <div class="cart-item">
+                    <button class="cart-btn">Bỏ giỏ</button>
+                    <p>380.000đ/kg</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./img/product/img7.png" alt="img7">
+                <div class="info">
+                    <p class="tea">Trà xanh matcha:</p>
+                    <p class="flavor">Đắng phụ thuộc vào số lượng nhiều hay ít, thơm đậm vị trà xanh.</p>
+                </div>
+                <div class="buy">
+                    <button data-target="cart-7" onclick="toggleCart(this)">Mua</button>
+                    <p class="price">1.500.000đ/kg</p>
+                </div>
+            </div>
+            <div class="cart hidden" id="cart-7">
+                <div class="cart-item">
+                    <button class="cart-btn">Bỏ giỏ</button>
+                    <p>750.000đ/500g</p>
+                </div>
+                <div class="cart-item">
+                    <button class="cart-btn">Bỏ giỏ</button>
+                    <p>1.500.000đ/kg</p>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="contact">
+            <h3 class="title">Hỗ trợ khách hàng</h3>
+            <div class="send">
+                <button>Send</button>
+                <p class="email">cskh@trahoangminh.vn</p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="links">
+            <a href="./" class="logo"><img src="./logo1.png" alt="logo"></a>
+            <div class="fanpage">
+                <a href="./" class="fb"><img src="./img/main/fb.png" alt="fb"></a>
+                <a href="./" class="linkedln"><img src="./img/main/linkedln.png" alt="linkedln"></a>
+                <a href="./" class="yt"><img src="./img/main/yt.png" alt="yt"></a>
+                <a href="./" class="insta"><img src="./img/main/insta.png" alt="insta"></a>
+            </div>
+        </div>
+        <div class="blog">
+            <h4 class="head">Blog</h4>
+            <div class="items">
+                <div class="post">
+                    <a href="./" class="title">Cách pha trà ngon và đậm vị</a>
+                    <p class="time">15/02/2022</p>
+                </div>
+                <div class="post">
+                    <a href="./" class="title">Cách chế biến Matcha với các món bánh nướng</a>
+                    <p class="time">15/02/2022</p>
+                </div>
+                <div class="post">
+                    <a href="./" class="title">Những loại trà và lợi ích sức khỏe chúng mang lại</a>
+                    <p class="time">15/02/2022</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="accounting" class="accounting hidden">
+        <div class="content">
+            <p>Địa chỉ giao hàng:</p><br />
+            <p>Hẻm 77, Nguyễn Đỗ Cung, Tây Thạnh, Tân Phú Hồ Chí Minh, Việt Nam</p><br /><br />
+            <p>Dự định ngày giao: 16/12/2024</p><br /><br />
+            <div class="note">
+                <p>Ghi chú cho shop:</p>
+                <input type="text" placeholder="Nhập ghi chú...">
+            </div>
+            <div class="voucher">
+                <button>Voucher</button>
+                <input type="text" placeholder="Nhập mã giảm giá...">
+            </div>
+            <div class="bottom">
+                <button id="checkout-btn">Thanh toán</button>
+                <button id="close-modal-btn">Đóng</button>
+            </div>
+        </div>
+    </div>
+    <script src="product.js"></script>
+</body>
+
+</html>
